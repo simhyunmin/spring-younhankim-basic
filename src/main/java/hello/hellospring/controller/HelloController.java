@@ -22,7 +22,7 @@ public class HelloController {
         return "hello-template";
     }
 
-    @GetMapping("hello-string")
+    @GetMapping("hello-spring")
     @ResponseBody
     public String helloString(@RequestParam("name") String name){
         return "hello "+name;
@@ -38,7 +38,6 @@ public class HelloController {
 
     static class Hello{
         private String name;
-
         public String getName() {
             return name;
         }
